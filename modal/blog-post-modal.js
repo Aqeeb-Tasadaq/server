@@ -17,6 +17,18 @@ const blogSchema = new mongoose.Schema(
         author_name:{
             type: String,
             required: true,
+        },
+         blogType:{
+             type: String,
+             required: true,
+         },
+        selectedDate:{
+            type: String,
+            required: true,
+        },
+        image:{
+            type: String,
+            required: true,
         }
     }
 )
