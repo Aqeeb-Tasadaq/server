@@ -15,9 +15,7 @@ const __dirname = dirname(__filename);
 const app = express()
 app.use(cors(
     {
-        origin:["https://blog-site-by-aqeeb.surge.sh/"],
-        methods: ["POST", "GET"],
-        credentials: true
+        origin:["*"]
     }
 ))
 app.use(bodyParser.json({ extended: true }))
