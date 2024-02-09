@@ -13,7 +13,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const app = express()
-app.use(cors())
+app.use(cors(
+    {
+        origin:[""],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+))
 app.use(bodyParser.json({ extended: true }))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, "./public")));
