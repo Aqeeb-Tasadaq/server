@@ -15,7 +15,7 @@ const __dirname = dirname(__filename);
 const app = express()
 app.use(cors(
     {
-        origin:[""],
+        origin:["https://react-backend-mocha.vercel.app/"],
         methods: ["POST", "GET"],
         credentials: true
     }
